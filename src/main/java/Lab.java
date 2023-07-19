@@ -14,6 +14,11 @@ public class Lab {
      * @return a String "Even" if n is even, and "Odd" of in is odd. The test cases are case-sensitive.
      */
     public String decide(int n){
-        return "";
+        int remainder = n%2;
+        boolean evenOrOdd = (remainder == 0);
+        if (evenOrOdd) {
+            return "Even";
+        }
+        return "Odd";
     }
 }
